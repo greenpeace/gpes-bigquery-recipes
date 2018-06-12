@@ -15,7 +15,7 @@ SELECT
   email,
   COUNT(email) AS number_of_email_opens
 FROM
-  learn.mails
+  spain.mails
 WHERE
   Campaign_Type = 'EBC'
   AND (Campaign_Date BETWEEN '2018-06-09'
@@ -38,7 +38,7 @@ SELECT
   email,
   COUNT (email) AS total_opens
 FROM
-  learn.unique_opens
+  spain.unique_opens
   GROUP BY email
 ORDER BY
   COUNT(email) DESC;
@@ -55,7 +55,7 @@ SELECT
   email,
   COUNT(email) AS email_with_click_same_email
 FROM
-  learn.mails
+  spain.mails
 WHERE
   Campaign_Type = 'EBC'
   AND (Campaign_Date BETWEEN '2018-06-09'
@@ -79,7 +79,7 @@ SELECT
   email,
   COUNT (email) AS total_clicks
 FROM
-  learn.unique_clicks
+  spain.unique_clicks
 GROUP BY
   email
 ORDER BY
