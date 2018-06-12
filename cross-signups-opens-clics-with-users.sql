@@ -21,8 +21,7 @@ LEFT JOIN
 ON
   users.email = signups_per_user.email
 WHERE
-  users.tipo = '2'
-  AND signups_per_user.total_signups IS NOT NULL;
+  signups_per_user.total_signups IS NOT NULL;
 
 /*
 
@@ -36,7 +35,6 @@ Cross the current users database with the number of opens per user from the tran
 
 */
 
-
 SELECT
   users.email,
   opens_per_user.total_opens
@@ -47,8 +45,7 @@ LEFT JOIN
 ON
   users.email = opens_per_user.email
 WHERE
-  users.tipo = '2'
-  AND opens_per_user.total_opens IS NOT NULL;
+  opens_per_user.total_opens IS NOT NULL;
 
 
 /*
@@ -57,13 +54,11 @@ Export the result and upload it to Engaging Networks.
 
 */
 
-
 /*
 
 Cross the current users database with the number of clicks per user from the transctional file
 
 */
-
 
 SELECT
   users.email,
@@ -75,8 +70,7 @@ LEFT JOIN
 ON
   users.email = clicks_per_user.email
 WHERE
-  users.tipo = '2'
-  AND clicks_per_user.total_clicks IS NOT NULL;
+  clicks_per_user.total_clicks IS NOT NULL;
 
 
 /*
