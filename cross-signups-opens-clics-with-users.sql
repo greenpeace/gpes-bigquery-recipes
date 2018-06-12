@@ -14,6 +14,7 @@ Cross the current users database with the number of SIGNUPS per user from the tr
 
 */
 
+#standardSQL
 SELECT
   users.email,
   signups_per_user.total_signups
@@ -36,6 +37,7 @@ Cross the current users database with the number of OPENS per user from the tran
 
 */
 
+#standardSQL
 SELECT
   users.email,
   opens_per_user.total_opens
@@ -58,6 +60,7 @@ Cross the current users database with the number of CLICKS per user from the tra
 
 */
 
+#standardSQL
 SELECT
   users.email,
   clicks_per_user.total_clicks

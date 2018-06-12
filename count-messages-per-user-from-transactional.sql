@@ -10,6 +10,7 @@ To get rid of duplicates, create a unique_opens table with the unique opens from
 
 */
 
+#standardSQL
 SELECT
   Campaign_ID,
   email,
@@ -34,6 +35,7 @@ From that unique_opens table, count the number of times each email has showned u
 
 */
 
+#standardSQL
 SELECT
   email,
   COUNT (email) AS total_opens
@@ -53,7 +55,7 @@ To get rid of duplicates, create a unique_clicks table with the unique clics fro
 
 */
 
-
+#standardSQL
 SELECT
   Campaign_ID,
   email,
@@ -79,6 +81,7 @@ From that unique_clicks table, count the number of times each email has showned 
 
 */
 
+#standardSQL
 SELECT
   email,
   COUNT (email) AS total_clicks
