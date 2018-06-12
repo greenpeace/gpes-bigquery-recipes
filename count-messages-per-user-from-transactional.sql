@@ -44,13 +44,8 @@ ORDER BY
   COUNT(email) DESC;
 
 
-/*
+-- Export this result to a opens_per_user table
 
-Export this result to a opens_per_user table
-
-You can cross this table with your user database, also using SQL.
-
-*/
 
 /*
 
@@ -94,10 +89,4 @@ GROUP BY
 ORDER BY
   COUNT(email) DESC;
 
-/*
-
-Export this result to a clicks_per_user table.
-
-You can cross this table with your user database, also using SQL.
-
-*/
+-- Export this result to a clicks_per_user table.

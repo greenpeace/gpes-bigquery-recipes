@@ -44,11 +44,7 @@ FROM
 ORDER BY
   COUNT(email) DESC;
 
-/*
 
-Export this result to a signups_per_user table.
+-- Export this result to a signups_per_user table.
 
-You can cross this table with your user database, also using SQL.
-
-*/
 
