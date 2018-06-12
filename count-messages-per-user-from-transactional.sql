@@ -43,6 +43,15 @@ FROM
 ORDER BY
   COUNT(email) DESC;
 
+
+/*
+
+Export this result to a opens_per_user table
+
+You can cross this table with your user database, also using SQL.
+
+*/
+
 /*
 
 To get rid of duplicates, create a unique_clicks table with the unique clics from the transactional table by running the following query:
@@ -85,3 +94,10 @@ GROUP BY
 ORDER BY
   COUNT(email) DESC;
 
+/*
+
+Export this result to a clicks_per_user table.
+
+You can cross this table with your user database, also using SQL.
+
+*/
