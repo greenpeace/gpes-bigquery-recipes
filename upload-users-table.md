@@ -2,13 +2,27 @@
 
 ## 1 - Export the users from Engaging Networks
 
-Engaging Networks Export Group: LOPD delete.
+Use the Engaging Networks Export Group: **LOPD delete**. It has this fields:
+
+* Supporter_ID
+* Date_Created
+* Date_Modified
+* Suppressed
+* email
+* first_name
+* id_number
+* phone_number
+* tipo
+* last_name
+* contact_codes
+* SFDC_Contact_ID
+* SFDC_Lead_ID
 
 If necessary split the file by date, as Engaging Networks does not allow the download of large files.
 
 ## 2 - Upload the csv to Google Storage
 
-With Cyberduck, upload the csv file(s) to a private Google Storage Bucket.
+With **Cyberduck**, upload the csv file(s) to a private Google Storage Bucket. Point to the bucket + file with something like:
 
 ```text
 gs://gpes-bigquery-files/spain-users.csv
