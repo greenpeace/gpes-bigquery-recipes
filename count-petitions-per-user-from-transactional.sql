@@ -12,6 +12,8 @@ To get rid of duplicates, create a unique_signups table with the unique signups 
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.unique_signups AS
 SELECT
   Campaign_ID,
   email,
@@ -37,6 +39,8 @@ From that unique_signups table, count the number of times each email has showned
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.signups_per_user AS
 SELECT
   email,
   COUNT (email) AS total_signups
@@ -46,5 +50,3 @@ FROM
 ORDER BY
   COUNT(email) DESC;
 
-
--- Export this result to a signups_per_user table.

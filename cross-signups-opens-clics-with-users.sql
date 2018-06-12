@@ -15,6 +15,8 @@ Cross the current users database with the number of SIGNUPS per user from the tr
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.signups_final AS
 SELECT
   users.email,
   signups_per_user.total_signups
@@ -28,7 +30,7 @@ WHERE
   signups_per_user.total_signups IS NOT NULL;
 
 
--- Export the result and upload it to Engaging Networks.
+-- Download the signups_final csv and upload it to Engaging Networks.
 
 
 /*
@@ -38,6 +40,8 @@ Cross the current users database with the number of OPENS per user from the tran
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.opens_final AS
 SELECT
   users.email,
   opens_per_user.total_opens
@@ -51,7 +55,7 @@ WHERE
   opens_per_user.total_opens IS NOT NULL;
 
 
--- Export the result and upload it to Engaging Networks.
+-- Download the opens_final csv and upload it to Engaging Networks.
 
 
 /*
@@ -61,6 +65,8 @@ Cross the current users database with the number of CLICKS per user from the tra
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.clicks_final AS
 SELECT
   users.email,
   clicks_per_user.total_clicks
@@ -74,4 +80,4 @@ WHERE
   clicks_per_user.total_clicks IS NOT NULL;
 
 
--- Export the result and upload it to Engaging Networks.
+-- Download the clicks_final csv and upload it to Engaging Networks.

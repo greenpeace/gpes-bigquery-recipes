@@ -11,6 +11,8 @@ To get rid of duplicates, create a unique_opens table with the unique opens from
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.unique_opens AS
 SELECT
   Campaign_ID,
   email,
@@ -36,6 +38,8 @@ From that unique_opens table, count the number of times each email has showned u
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.opens_per_user AS
 SELECT
   email,
   COUNT (email) AS total_opens
@@ -46,9 +50,6 @@ ORDER BY
   COUNT(email) DESC;
 
 
--- Export this result to a opens_per_user table
-
-
 /*
 
 To get rid of duplicates, create a unique_clicks table with the unique clics from the transactional table by running the following query:
@@ -56,6 +57,8 @@ To get rid of duplicates, create a unique_clicks table with the unique clics fro
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.unique_clicks AS
 SELECT
   Campaign_ID,
   email,
@@ -82,6 +85,8 @@ From that unique_clicks table, count the number of times each email has showned 
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.clicks_per_user AS
 SELECT
   email,
   COUNT (email) AS total_clicks
@@ -92,4 +97,3 @@ GROUP BY
 ORDER BY
   COUNT(email) DESC;
 
--- Export this result to a clicks_per_user table.
