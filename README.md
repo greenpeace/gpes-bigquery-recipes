@@ -9,6 +9,7 @@ To know more about Google Big Query, watch [this video](https://www.youtube.com/
 ## How to upload data to Big Query
 
 * [Upload petitions transactional](upload-petitions-transactional.md)
+* [Upload email opens and clics transactional](upload-mails-transactional.md)
 * [Upload the users table](upload-users-table.md)
 
 ## Count petitions and messages per user from an Engaging Networks transactional file
