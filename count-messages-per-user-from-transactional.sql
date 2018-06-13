@@ -21,8 +21,8 @@ FROM
   spain.mails
 WHERE
   Campaign_Type = 'EBC'
-  AND (Campaign_Date BETWEEN '2018-06-09'
-    AND '2018-06-11')
+  AND (Campaign_Date BETWEEN '2017-06-01'
+    AND '2018-06-30')
   AND Campaign_Data_1 = 'open'
 GROUP BY
   Campaign_ID,
@@ -69,8 +69,8 @@ FROM
   spain.mails
 WHERE
   Campaign_Type = 'EBC'
-  AND (Campaign_Date BETWEEN '2018-06-01'
-    AND '2018-06-13')
+  AND (Campaign_Date BETWEEN '2017-06-01'
+    AND '2018-06-30')
   AND Campaign_Data_1 = 'open'
   AND Campaign_Data_2 = 'click'
 GROUP BY

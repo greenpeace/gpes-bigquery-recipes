@@ -24,8 +24,8 @@ WHERE
   (Campaign_Type = 'PET'
     OR Campaign_Type = 'ETT'
     OR Campaign_Type = 'DCF')
-  AND (Campaign_Date BETWEEN '2018-05-12'
-    AND '2018-06-13')
+  AND (Campaign_Date BETWEEN '2017-06-01'
+    AND '2018-06-30')
 GROUP BY
   Campaign_ID,
   Supporter_Email
