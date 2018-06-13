@@ -50,3 +50,4 @@ FROM
 ORDER BY
   COUNT(email) DESC;
 
+-- The table signups_per_user will contain the emails addresses with number of signups per user
