@@ -35,9 +35,9 @@ gs://gpes-bigquery-files/*.csv
 
 ## 3 - Create a Google Bigquery table from the bucket
 
-Allow for one million errors and adjust the schema manually if you have too many errors. Making each field a string and checking the boxes will help.
-
 As a destination table name, choose **users**.
+
+Allow for a few dozen errors and adjust the schema manually if you have too many errors. Making each field a string and checking the boxes will help.
 
 ```text
 Supporter_ID:STRING,Date_Created:STRING,Date_Modified:STRING,Suppressed:STRING,email:STRING,first_name:STRING,id_number:STRING,phone_number:STRING,tipo:STRING,last_name:STRING,contact_codes:STRING,SFDC_Contact_ID:STRING,SFDC_Lead_ID:STRING
@@ -45,8 +45,10 @@ Supporter_ID:STRING,Date_Created:STRING,Date_Modified:STRING,Suppressed:STRING,e
 
 You may need to clean some lines:
 
+```sql
 DELETE
 FROM
   `spain.users`
 WHERE
   email = 'email';
+```
