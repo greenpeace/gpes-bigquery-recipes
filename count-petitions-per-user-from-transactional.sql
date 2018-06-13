@@ -16,19 +16,19 @@ CREATE TABLE IF NOT EXISTS
   spain.unique_signups AS
 SELECT
   Campaign_ID,
-  email,
-  COUNT(email) AS duplicates_email_petition
+  Supporter_Email,
+  COUNT(Supporter_Email) AS duplicates_email_petition
 FROM
   spain.petitions
 WHERE
   (Campaign_Type = 'PET'
     OR Campaign_Type = 'ETT'
     OR Campaign_Type = 'DCF')
-  AND (Campaign_Date BETWEEN '2018-06-09'
-    AND '2018-06-11')
+  AND (Campaign_Date BETWEEN '2018-05-12'
+    AND '2018-06-13')
 GROUP BY
   Campaign_ID,
-  email
+  Supporter_Email
 ORDER BY
   COUNT(Campaign_ID) DESC;
 
@@ -42,12 +42,12 @@ From that unique_signups table, count the number of times each email has showned
 CREATE TABLE IF NOT EXISTS
   spain.signups_per_user AS
 SELECT
-  email,
-  COUNT (email) AS total_signups
+  Supporter_Email,
+  COUNT (Supporter_Email) AS total_signups
 FROM
   spain.unique_signups
-  GROUP BY email
+  GROUP BY Supporter_Email
 ORDER BY
-  COUNT(email) DESC;
+  COUNT(Supporter_Email) DESC;
 
 -- The table signups_per_user will contain the emails addresses with number of signups per user

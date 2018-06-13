@@ -2,7 +2,7 @@
 
 ## 1 - Query and export in EN
 
-1. Make a query with all data capture and email to target petitions
+1. Make an export query with all data capture and email to target petitions
 2. Export this query as a transactional file
 3. Download the csv file from EN
 
