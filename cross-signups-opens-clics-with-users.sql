@@ -22,13 +22,10 @@ SELECT
   signups_per_user.total_signups
 FROM
   spain.users
-LEFT JOIN
+INNER JOIN
   spain.signups_per_user
 ON
-  users.email = signups_per_user.email
-WHERE
-  signups_per_user.total_signups IS NOT NULL;
-
+  users.email = signups_per_user.Supporter_Email;
 
 -- Download the signups_final csv and upload it to Engaging Networks.
 
@@ -47,13 +44,10 @@ SELECT
   opens_per_user.total_opens
 FROM
   spain.users
-LEFT JOIN
+INNER JOIN
   spain.opens_per_user
 ON
-  users.email = opens_per_user.email
-WHERE
-  opens_per_user.total_opens IS NOT NULL;
-
+  users.email = opens_per_user.Supporter_Email;
 
 -- Download the opens_final csv and upload it to Engaging Networks.
 
@@ -72,12 +66,9 @@ SELECT
   clicks_per_user.total_clicks
 FROM
   spain.users
-LEFT JOIN
+INNER JOIN
   spain.clicks_per_user
 ON
-  users.email = clicks_per_user.email
-WHERE
-  clicks_per_user.total_clicks IS NOT NULL;
-
+  users.email = clicks_per_user.Supporter_Email;
 
 -- Download the clicks_final csv and upload it to Engaging Networks.
