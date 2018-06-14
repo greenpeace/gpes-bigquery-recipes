@@ -42,3 +42,16 @@ WHERE
   SFDC_Contact_ID <> ''
   AND SFDC_Lead_ID <> '';
 
+/*
+
+Convert emails to sha256 (Adwords and Facebook Ads)
+
+*/
+
+#standardSQL
+SELECT
+  TO_HEX(SHA256(email)) AS email_sha256
+FROM
+  `spain.users`;
+
+  
