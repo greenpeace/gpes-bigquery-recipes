@@ -35,3 +35,20 @@ WHERE
   REGEXP_CONTAINS(id_number, '^[A-z]?[0123456789]{7,8}[trwagmyfpdxbnjzsqvhlcke]$')
   AND id_number <> '';
 
+/*
+
+Invalid phone numbers or formats
+
+*/
+
+#standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.invalid_phones AS
+SELECT
+  email,
+  phone_number
+FROM
+  `spain.users`
+WHERE
+  NOT REGEXP_CONTAINS(phone_number, '^[6789][0123456789]{8}$')
+  AND phone_number <> '';
