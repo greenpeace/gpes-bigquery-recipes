@@ -17,3 +17,8 @@ Please note that, with the code in this repository, you should always use Big Qu
 1. [Count the number of **petitons** per user from a transactional file](count-petitions-per-user-from-transactional.sql)
 2. [Count the number of **email opens** and **clics** per user from a transactional file](count-messages-per-user-from-transactional.sql)
 3. [**Cross** the users database with the number of petitions per user, number of opens per user and number of clicks per user](cross-signups-opens-clics-with-users.sql)
+
+## Checks
+
+* [Check invalid fields in the users table](check-invalid-from-users.sql)
+* [Other reports and checks](other-reports.sql)
