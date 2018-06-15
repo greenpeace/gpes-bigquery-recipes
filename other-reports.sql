@@ -3,6 +3,7 @@
 ID numbers that show up more than once in the database
 
 */
+
 #standardSQL
 CREATE TABLE IF NOT EXISTS
   spain.id_number_more_than_once AS
