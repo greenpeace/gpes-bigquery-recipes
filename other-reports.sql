@@ -44,14 +44,17 @@ WHERE
 
 /*
 
-Convert emails to sha256 (Adwords and Facebook Ads)
+Missing contact codes
 
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.missing_contact_codes AS
 SELECT
-  TO_HEX(SHA256(email)) AS email_sha256
+  *
 FROM
-  `spain.users`;
-
-  
+  `spain.users`
+WHERE
+  contact_codes == ''
+  AND SFDC_Contact_ID <> '';
