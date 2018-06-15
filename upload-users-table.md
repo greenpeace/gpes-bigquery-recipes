@@ -24,7 +24,6 @@ If necessary split the file by record created date, as Engaging Networks does no
 * 1/1/2016 to 31/7/2017 - spain-users-2.csv
 * 1/8/2017 to 12/6/2018 - spain-users-3.csv
 
-
 ## 2 - Upload the csv to Google Storage
 
 With **Cyberduck**, upload the csv file(s) to a private Google Storage Bucket. Point to the bucket + file with something like:
@@ -42,6 +41,10 @@ Allow for a few dozen errors and adjust the schema manually if you have too many
 ```text
 Supporter_ID:STRING,Date_Created:STRING,Date_Modified:STRING,Suppressed:STRING,email:STRING,first_name:STRING,id_number:STRING,phone_number:STRING,tipo:STRING,last_name:STRING,contact_codes:STRING,SFDC_Contact_ID:STRING,SFDC_Lead_ID:STRING
 ```
+
+## 4 - Clean
+
+First delete the CSV files from Google Cloud Storage.
 
 You may need to clean some lines:
 

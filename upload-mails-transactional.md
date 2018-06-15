@@ -19,9 +19,13 @@ If it doesn't exist create the **spain** dataset.
 In the dataset create a table from Google Cloud storage. Point to the bucket + file with something like:
 
 ```text
-gs://gpes-bigquery-files/test/spain-email-transactional.csv
+gs://gpes-bigquery-files/spain-email-transactional.csv
 ```
 
 As a destination table name, choose **mails**.
 
 If there's errors adjust the schema.
+
+## 4 - Clean
+
+First delete the CSV files from Google Cloud Storage.
