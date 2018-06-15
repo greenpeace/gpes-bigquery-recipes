@@ -22,3 +22,7 @@ Please note that, with the code in this repository, you should always use Big Qu
 
 * [Check invalid fields in the users table](check-invalid-from-users.sql)
 * [Other reports and checks](other-reports.sql)
+
+## Other
+
+* [Utilities](utiliies.sql)
