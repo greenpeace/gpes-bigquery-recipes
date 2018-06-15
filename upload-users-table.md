@@ -52,3 +52,32 @@ FROM
 WHERE
   email = 'email';
 ```
+
+Finally you may want to transform the dates in the yyyy-mm-dd format, to be able to use them in Queries:
+
+First the created date:
+
+```sql
+#standardSQL
+UPDATE
+  `spain.users`
+SET
+  Date_Created = SAFE_CAST(PARSE_DATE('%d/%m/%Y',
+      Date_Created) AS STRING)
+WHERE
+  email <> '';
+  ```
+
+And then the modified date:
+
+```sql
+#standardSQL
+UPDATE
+  `spain.users`
+SET
+  Date_Modified = SAFE_CAST(PARSE_DATE('%d/%m/%Y',
+      Date_Modified) AS STRING)
+WHERE
+  email <> ''
+  AND Date_Modified <> '';
+  ```
