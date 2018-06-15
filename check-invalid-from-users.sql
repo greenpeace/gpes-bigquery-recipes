@@ -1,6 +1,6 @@
 /*
 
-Creaes a table with invalid ID numbers
+Creates a table with invalid ID numbers
 
 */
 
@@ -52,3 +52,4 @@ FROM
 WHERE
   NOT REGEXP_CONTAINS(phone_number, '^[6789][0123456789]{8}$')
   AND phone_number <> '';
+
