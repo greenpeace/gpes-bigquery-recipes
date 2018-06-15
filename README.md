@@ -25,4 +25,4 @@ Please note that, with the code in this repository, you should always use Big Qu
 
 ## Other
 
-* [Utilities](utiliies.sql)
+* [Utilities](utilities.sql)
