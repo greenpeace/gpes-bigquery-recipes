@@ -17,6 +17,7 @@ FROM
 Leads without phone number
 
 */
+
 #standardSQL
 SELECT
   *
@@ -32,3 +33,19 @@ WHERE
   AND last_name <> ''
   AND id_number <> ''
   AND phone_number = '';
+
+/*
+
+Records without ID number
+
+*/
+
+#standardSQL
+SELECT
+  *
+FROM
+  `spain.users`
+WHERE
+  first_name <> ''
+  AND last_name <> ''
+  AND id_number = '';
