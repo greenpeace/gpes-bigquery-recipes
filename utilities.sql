@@ -5,6 +5,8 @@ Convert emails to sha256 (Adwords and Facebook Ads)
 */
 
 #standardSQL
+CREATE TABLE IF NOT EXISTS
+  spain.email_as_sha256 AS
 SELECT
   TO_HEX(SHA256(email)) AS email_sha256
 FROM
