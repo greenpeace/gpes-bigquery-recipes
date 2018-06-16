@@ -19,7 +19,8 @@ CREATE TABLE IF NOT EXISTS
   spain.signups_final AS
 SELECT
   users.email,
-  signups_per_user.total_signups
+  signups_per_user.total_signups,
+  signups_per_user.last_signup_date_all_petitions
 FROM
   spain.users
 INNER JOIN
@@ -41,7 +42,8 @@ CREATE TABLE IF NOT EXISTS
   spain.opens_final AS
 SELECT
   users.email,
-  opens_per_user.total_opens
+  opens_per_user.total_opens,
+  opens_per_user.last_email_open_date_all_emails
 FROM
   spain.users
 INNER JOIN
@@ -63,7 +65,8 @@ CREATE TABLE IF NOT EXISTS
   spain.clicks_final AS
 SELECT
   users.email,
-  clicks_per_user.total_clicks
+  clicks_per_user.total_clicks,
+  clicks_per_user.last_email_click_date_all_emails
 FROM
   spain.users
 INNER JOIN
