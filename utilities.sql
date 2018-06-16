@@ -50,3 +50,4 @@ WHERE
   first_name <> ''
   AND last_name <> ''
   AND id_number = '';
+

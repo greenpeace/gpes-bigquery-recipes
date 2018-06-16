@@ -1,18 +1,19 @@
 # BigQuery recipes
 
-This repository contains **[Google Big Query](https://bigquery.cloud.google.com/)** recipes to Analyse our data. To know more about Google Big Query, watch [this video](https://www.youtube.com/watch?v=eyBK9nj-7AA).
+This repository contains **[Google BigQuery](https://bigquery.cloud.google.com/)** recipes to Analyse our data. To know more about Google BigQuery, watch [this video](https://www.youtube.com/watch?v=eyBK9nj-7AA).
 
 It’s mainly recipes to use with data exported from Engaging Networks. User data and transactional data (petition signups, email opens and email clicks).
 
-## How to **upload data** to Big Query
+## How to **upload data** to BigQuery
 
 From Engaging Networks:
 
-* [Getting started](prepare-to-bigquery.md)
-* [Upload petition signups](upload-petitions-transactional.md)
-* [Upload email opens and clics](upload-mails-transactional.md)
-* [Upload the users table](upload-users-table.md)
-* [Upload the email opt-outs](upload-optouts.md)
+* **[Getting started](prepare-to-bigquery.md)** - Access to Google Cloud, create a dataset, create a bucket, csv file uploads.
+
+1. [Upload petition signups](upload-petitions-transactional.md) - Export, csv upload and create a table.
+2. [Upload email opens and clics](upload-mails-transactional.md) - Ibid.
+3. [Upload the users table](upload-users-table.md)- Ibid.
+4. [Upload the email opt-outs](upload-optouts.md) - Ibid.
 
 ## Count **petitions and messages per user** from an Engaging Networks transactional file
 
@@ -35,4 +36,4 @@ Things you can check from the Engaging Networks user file:
 
 ## Notes
 
-* With the code in this repository, you should always use Big Query Standard SQL.
+* With the code in this repository, you should always use BigQuery Standard SQL.
