@@ -17,7 +17,8 @@ CREATE TABLE IF NOT EXISTS
 SELECT
   Campaign_ID,
   Supporter_Email,
-  COUNT(Supporter_Email) AS duplicates_email_petition
+  COUNT(Supporter_Email) AS duplicates_email_petition,
+  MAX(Campaign_Date) AS last_signup_date_this_petition
 FROM
   spain.petitions
 WHERE
@@ -43,7 +44,8 @@ CREATE TABLE IF NOT EXISTS
   spain.signups_per_user AS
 SELECT
   Supporter_Email,
-  COUNT (Supporter_Email) AS total_signups
+  COUNT (Supporter_Email) AS total_signups,
+  MAX(last_signup_date_this_petition) AS last_signup_date_all_petitions
 FROM
   spain.unique_signups
   GROUP BY Supporter_Email

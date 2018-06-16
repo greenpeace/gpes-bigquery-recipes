@@ -16,7 +16,8 @@ CREATE TABLE IF NOT EXISTS
 SELECT
   Campaign_ID,
   Supporter_Email,
-  COUNT(Supporter_Email) AS number_of_email_opens
+  COUNT(Supporter_Email) AS number_of_email_opens,
+  MAX(Campaign_Date) AS last_email_open_date_this_email
 FROM
   spain.mails
 WHERE
@@ -38,14 +39,15 @@ From that unique_opens table, count the number of times each email has showned u
 */
 
 #standardSQL
-CREATE TABLE IF NOT EXISTS
-  spain.opens_per_user AS
+CREATE TABLE IF NOT EXISTS spain.opens_per_user AS
 SELECT
   Supporter_Email,
-  COUNT (Supporter_Email) AS total_opens
+  COUNT (Supporter_Email) AS total_opens,
+  MAX(last_email_open_date_this_email) AS last_email_open_date_all_emails
 FROM
   spain.unique_opens
-  GROUP BY Supporter_Email
+GROUP BY
+  Supporter_Email
 ORDER BY
   COUNT(Supporter_Email) DESC;
 
@@ -64,7 +66,8 @@ CREATE TABLE IF NOT EXISTS
 SELECT
   Campaign_ID,
   Supporter_Email,
-  COUNT(Supporter_Email) AS email_with_click_same_email
+  COUNT(Supporter_Email) AS email_with_click_same_email,
+  MAX(Campaign_Date) AS last_email_click_date_this_email
 FROM
   spain.mails
 WHERE
@@ -91,7 +94,8 @@ CREATE TABLE IF NOT EXISTS
   spain.clicks_per_user AS
 SELECT
   Supporter_Email,
-  COUNT (Supporter_Email) AS total_clicks
+  COUNT (Supporter_Email) AS total_clicks,
+  MAX(last_email_click_date_this_email) AS last_email_click_date_all_emails
 FROM
   spain.unique_clicks
 GROUP BY
