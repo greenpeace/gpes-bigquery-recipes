@@ -1,5 +1,7 @@
 # How to upload the users table
 
+Uploading the user's table is important as, apart from containing important information, it's the table other tables relate to.
+
 ## 1 - Export the users from Engaging Networks
 
 Use the Engaging Networks Export Group: **LOPD delete**. It's a group we have created and that has this fields:

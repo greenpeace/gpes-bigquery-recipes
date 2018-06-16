@@ -1,4 +1,4 @@
-# How to upload the petitions
+# How to upload the petition signups
 
 The petition signups are uploaded in transactional files. This files can contain information about dozens or even hundreds of different petitions.
 
