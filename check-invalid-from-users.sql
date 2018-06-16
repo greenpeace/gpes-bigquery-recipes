@@ -1,6 +1,7 @@
 /*
 
-Creates a table with invalid ID numbers
+Creates a table with invalid ID numbers.
+You can delete them or fix them.
 
 */
 
@@ -19,7 +20,8 @@ WHERE
 
 /*
 
-Creates a table with valid but lowercased ID numbers to uppercase
+Creates a table with valid but lowercased ID numbers to uppercase.
+You can re-upload this table's ID numbers.
 
 */
 
@@ -37,7 +39,8 @@ WHERE
 
 /*
 
-Invalid phone numbers or formats
+Creates a table with phone numbers in an invalid format.
+You can delete them or fix them.
 
 */
 

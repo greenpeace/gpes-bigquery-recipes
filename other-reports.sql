@@ -1,6 +1,6 @@
 /*
 
-ID numbers that show up more than once in the database
+Creates a table with records that have an ID number that show up more than once in the database.
 
 */
 
@@ -28,7 +28,7 @@ ORDER BY
 
 /*
 
-Have both a contact ID and lead ID
+Creates a table with records that have both a contact ID and a lead ID.
 
 */
 
@@ -45,7 +45,8 @@ WHERE
 
 /*
 
-Missing contact codes
+Creates a table with records that haven't contact codes but have a Salesforce Contact ID.
+This can be crossed with Salesforce data and updated.
 
 */
 
@@ -59,3 +60,19 @@ FROM
 WHERE
   contact_codes == ''
   AND SFDC_Contact_ID <> '';
+
+/*
+
+After crossing the user's table with the email opt-outs table you can count how many email accounts have decided to opt-out of receiving email.
+
+*/
+
+SELECT
+  `receive_emails`,
+  COUNT(`receive_emails`) AS total
+FROM
+  `spain.users`
+GROUP BY
+  `receive_emails`
+ORDER BY
+  COUNT(`receive_emails`) DESC;
