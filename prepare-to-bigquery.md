@@ -6,7 +6,7 @@ First you'll need access to Engaging Networks or Engaging Networks Data as CSVs.
 
 ## Access to Google Cloud
 
-Make sure you have access to your [Google Cloud platform account](https://console.cloud.google.com/). At least you'll need access to [Google Cloud Storage](https://console.cloud.google.com/storage/) and [Google Big Query](https://bigquery.cloud.google.com/). Your office might have a Google Cloud account, for example for Planet 4.
+Make sure you have access to the [Google Cloud Platform](https://console.cloud.google.com/). At least you'll need access to [Google Cloud Storage](https://console.cloud.google.com/storage/) and [Google Big Query](https://bigquery.cloud.google.com/). Your office might have a Google Cloud project, for example for Planet 4.
 
 Google Big Query is [very cheap](https://cloud.google.com/bigquery/pricing). It's free up to 1 Terabyte of data processing per month and it's about 5 USD for each extra Terabyte.
 

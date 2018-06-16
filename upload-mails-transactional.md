@@ -1,10 +1,14 @@
-# How to upload the email opens and clics (transactional)
+# How to upload the email opens and clics
+
+The email opens and clics are uploaded in transactional files. This files can contain information about dozens or even hundreds of different emails.
 
 ## 1 - Query and export in EN
 
-1. Make a query with the email opens and clics you want to check
+1. Make a query with the email opens and clics you want to check - At the moment you can't query all the emails.
 2. Export this query as a transactional file
 3. Download the csv file from EN
+
+Please note that there may be **limitations** about the amount of information you can download or how far back into the past you can query.
 
 ## 2 - Upload the csv to Google Storage
 

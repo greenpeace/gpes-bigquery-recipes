@@ -1,10 +1,14 @@
-# How to upload the petitions (transactional)
+# How to upload the petitions
+
+The petition signups are uploaded in transactional files. This files can contain information about dozens or even hundreds of different petitions.
 
 ## 1 - Query and export in EN
 
 1. Make an export query with all data capture and email to target petitions
 2. Export this query as a transactional file
 3. Download the csv file from EN
+
+Please note that there may be **limitations** about the amount of information you can download or how far back into the past you can query.
 
 ## 2 - Upload the csv to Google Storage
 
