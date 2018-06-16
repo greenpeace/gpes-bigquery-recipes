@@ -12,6 +12,7 @@ From Engaging Networks:
 * [Upload petitions (transactional)](upload-petitions-transactional.md)
 * [Upload email opens and clics (transactional)](upload-mails-transactional.md)
 * [Upload the users table (users)](upload-users-table.md)
+* [Upload the email opt-outs](upload-optouts.md)
 
 ## Count **petitions and messages per user** from an Engaging Networks transactional file
 
