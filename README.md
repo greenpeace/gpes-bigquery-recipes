@@ -8,17 +8,23 @@ Please note that, with the code in this repository, you should always use Big Qu
 
 ## How to **upload data** to Big Query
 
+From Engaging Networks:
+
 * [Upload petitions (transactional)](upload-petitions-transactional.md)
 * [Upload email opens and clics (transactional)](upload-mails-transactional.md)
 * [Upload the users table (users)](upload-users-table.md)
 
 ## Count **petitions and messages per user** from an Engaging Networks transactional file
 
+After uploading data to Engaging Networks:
+
 1. [Count the number of **petitons** per user from a transactional file](count-petitions-per-user-from-transactional.sql)
 2. [Count the number of **email opens** and **clics** per user from a transactional file](count-messages-per-user-from-transactional.sql)
 3. [**Cross** the users database with the number of petitions per user, number of opens per user and number of clicks per user](cross-signups-opens-clics-with-users.sql)
 
 ## Checks
+
+Things you can check from the Engaging Networks user file:
 
 * [Check invalid fields in the users table](check-invalid-from-users.sql)
 * [Other reports and checks](other-reports.sql)
