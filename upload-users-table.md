@@ -20,23 +20,25 @@ Use the Engaging Networks Export Group: **LOPD delete**. It's a group we have cr
 
 If necessary split the file by record created date, as Engaging Networks does not allow the download of large files. Here's what works for us:
 
-* 21/03/2014 to 31/12/2015 - spain-users-1.csv
-* 1/1/2016 to 31/7/2017 - spain-users-2.csv
-* 1/8/2017 to 12/6/2018 - spain-users-3.csv
+1. 21/03/2014 to 31/12/2015 - spain-users-1.csv
+2. 1/1/2016 to 31/7/2017 - spain-users-2.csv
+3. 1/8/2017 to 12/6/2018 - spain-users-3.csv
 
-## 2 - Upload the csv to Google Storage
+## 2 - Upload the (3) csvs to Google Storage
 
-With **Cyberduck**, upload the csv file(s) to a private Google Storage Bucket. Point to the bucket + file with something like:
+With **Cyberduck**, upload the csv file(s) to your Google Storage Bucket. In our case it's named **gpes-bigquery-files**.
+
+## 3 - Create a table and upload
+
+In the **spain** dataset create a table named **users** from Google Cloud storage. Point to the bucket + file with something like:
 
 ```text
 gs://gpes-bigquery-files/*.csv
 ```
 
-## 3 - Create a Google Bigquery table from the bucket
-
-As a destination table name, choose **users**.
-
 Allow for a few dozen errors and adjust the schema manually if you have too many errors. Making each field a string and checking the boxes will help.
+
+Here's our schema:
 
 ```text
 Supporter_ID:STRING,Date_Created:STRING,Date_Modified:STRING,Suppressed:STRING,email:STRING,first_name:STRING,id_number:STRING,phone_number:STRING,tipo:STRING,last_name:STRING,contact_codes:STRING,SFDC_Contact_ID:STRING,SFDC_Lead_ID:STRING
@@ -44,9 +46,9 @@ Supporter_ID:STRING,Date_Created:STRING,Date_Modified:STRING,Suppressed:STRING,e
 
 ## 4 - Clean
 
-First delete the CSV files from Google Cloud Storage.
+First delete the **CSV files** from Google Cloud Storage.
 
-You may need to clean some lines:
+You may need to clean some lines on the **users table** with the Query:
 
 ```sql
 DELETE
@@ -56,7 +58,7 @@ WHERE
   email = 'email';
 ```
 
-Finally you may want to transform the dates in the yyyy-mm-dd format, to be able to use them in Queries:
+Finally you may want to **transform the dates** in the yyyy-mm-dd format, to be able to use them in Queries:
 
 First the created date:
 

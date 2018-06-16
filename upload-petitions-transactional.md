@@ -8,24 +8,20 @@
 
 ## 2 - Upload the csv to Google Storage
 
-Rename the csv as spain-petitions-transactional.csv
+Rename the csv as **spain-petitions-transactional.csv**
 
-With **Cyberduck**, upload the csv file(s) to a private Google Storage Bucket. In our case it's named **gpes-bigquery-files**.
+With **Cyberduck**, upload the csv file(s) to your Google Storage Bucket. In our case it's named **gpes-bigquery-files**.
 
-## 3 - Create a data set
+## 3 - Create a table and upload
 
-If it doesn't exist create the **spain** dataset.
-
-In the dataset create a table from Google Cloud storage. Point to the bucket + file with something like:
+In the **spain** dataset create a table named **petitions** from Google Cloud storage. Point to the bucket + file with something like:
 
 ```text
 gs://gpes-bigquery-files/spain-petitions-transactional.csv
 ```
 
-As a destination table name, choose **petitions**.
-
 If there's errors adjust the schema.
 
 ## 4 - Clean
 
-First delete the CSV files from Google Cloud Storage.
+First delete the **CSV files** from Google Cloud Storage.
