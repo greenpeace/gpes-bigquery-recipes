@@ -53,6 +53,7 @@ First delete the **CSV files** from Google Cloud Storage.
 You may need to clean some lines on the **users table** with the Query:
 
 ```sql
+#standardSQL
 DELETE
 FROM
   `spain.users`

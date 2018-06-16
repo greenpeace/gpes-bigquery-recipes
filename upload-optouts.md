@@ -35,6 +35,7 @@ First add a new string field to the users table with the name **wants_to_receive
 Now cross the users table with the opt-outs table with the query:
 
 ```sql
+#standardSQL
 UPDATE
   `spain.users` a
 SET
@@ -48,6 +49,7 @@ WHERE
 Finally you can make the `null` values as `Y`, to simplify the queries:
 
 ```sql
+#standardSQL
 UPDATE
   `spain.users` a
 SET
@@ -56,7 +58,7 @@ WHERE
   a.wants_to_receive_emails IS NULL;
 ```
 
-If you do opt-in lists instead of opt-out, just adjust the SQL queries aboove.
+If you do opt-in lists instead of opt-out, just adjust the SQL queries above.
 
 ## Important note
 
