@@ -1,6 +1,7 @@
 /*
 
-Convert emails to sha256 (Adwords and Facebook Ads)
+Convert emails to sha256 
+This is useful to use email addresses in Adwords, Facebook and Twitter Ads without sending the email addresses.
 
 */
 
@@ -14,7 +15,7 @@ FROM
 
 /*
 
-Leads without phone number
+Get a list of leads without phone number
 
 */
 
