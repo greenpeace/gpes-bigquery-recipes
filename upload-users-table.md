@@ -58,9 +58,9 @@ WHERE
   email = 'email';
 ```
 
-Finally you may want to **transform the dates** in the yyyy-mm-dd format, to be able to use them in Queries:
+In Engaging Networks the users table hasn't  the date in thw yyyy-mm-dd format. If you want to **transform the dates** to the yyyy-mm-dd format, do the following queries:
 
-First the created date:
+For the **created record** date:
 
 ```sql
 #standardSQL
@@ -73,7 +73,7 @@ WHERE
   email <> '';
   ```
 
-And then the modified date:
+For the **modified record** date:
 
 ```sql
 #standardSQL

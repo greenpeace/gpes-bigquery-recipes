@@ -10,7 +10,7 @@
 
 Rename the csv as **spain-petitions-transactional.csv**
 
-With **Cyberduck**, upload the csv file(s) to your Google Storage Bucket. In our case it's named **gpes-bigquery-files**.
+With **Cyberduck**, upload the csv file to your Google Storage Bucket. In our case it's named **gpes-bigquery-files**.
 
 ## 3 - Create a table and upload
 
@@ -24,4 +24,4 @@ If there's errors adjust the schema.
 
 ## 4 - Clean
 
-First delete the **CSV files** from Google Cloud Storage.
+Delete the **CSV files** from Google Cloud Storage.

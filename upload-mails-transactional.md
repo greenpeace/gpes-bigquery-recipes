@@ -24,4 +24,4 @@ If there's errors adjust the schema.
 
 ## 4 - Clean
 
-First delete the **CSV files** from Google Cloud Storage.
+Delete the **CSV files** from Google Cloud Storage.
