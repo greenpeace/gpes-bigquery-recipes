@@ -29,6 +29,7 @@ ORDER BY
 /*
 
 Creates a table with records that have both a contact ID and a lead ID.
+This can be compared with Salesforce to check if the user is a contact or a lead.
 
 */
 

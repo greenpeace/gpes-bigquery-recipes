@@ -1,10 +1,8 @@
 # BigQuery recipes
 
-This repository contains **[Google Big Query](https://bigquery.cloud.google.com/)** recipes to Analyse our data.
+This repository contains **[Google Big Query](https://bigquery.cloud.google.com/)** recipes to Analyse our data. To know more about Google Big Query, watch [this video](https://www.youtube.com/watch?v=eyBK9nj-7AA).
 
-To know more about Google Big Query, watch [this video](https://www.youtube.com/watch?v=eyBK9nj-7AA).
-
-Please note that, with the code in this repository, you should always use Big Query Standard SQL.
+It’s mainly recipes to use with data exported from Engaging Networks. User data and transactional data (petition signups, email opens and email clicks).
 
 ## How to **upload data** to Big Query
 
@@ -32,3 +30,7 @@ Things you can check from the Engaging Networks user file:
 ## Other
 
 * [Utilities](utilities.sql)
+
+## Notes
+
+* With the code in this repository, you should always use Big Query Standard SQL.
