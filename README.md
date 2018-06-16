@@ -8,6 +8,7 @@ It’s mainly recipes to use with data exported from Engaging Networks. User dat
 
 From Engaging Networks:
 
+* [Getting started](prepare-to-bigquery.md)
 * [Upload petitions (transactional)](upload-petitions-transactional.md)
 * [Upload email opens and clics (transactional)](upload-mails-transactional.md)
 * [Upload the users table (users)](upload-users-table.md)
