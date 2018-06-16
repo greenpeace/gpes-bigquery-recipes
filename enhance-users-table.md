@@ -1,6 +1,8 @@
 # Enhance the users table
 
-## Create new fields in the users table
+To make the queries and results easier to handle you can copy the totals and last dates to the users table and zero the null values.
+
+## Create the new fields in the users table
 
 * total_signups (int)
 * last_signup_date_all_petitions (date)
@@ -15,7 +17,7 @@ Here's the schema as text, just paste it to BigQuery:
 total_signups:INTEGER,last_signup_date_all_petitions:DATE,total_opens:INTEGER,last_email_open_date_all_emails:DATE,total_clicks:INTEGER,last_email_click_date_all_emails:DATE
 ```
 
-## Update the signups
+## Copy the signups
 
 Copy the values from the signups_per_user table to the users table.
 
@@ -44,7 +46,7 @@ WHERE
   a.total_signups IS NULL;
 ```
 
-## Update the email opens
+## Copy the email opens
 
 Copy the values from the opens_per_user table to the users table.
 
@@ -73,7 +75,7 @@ WHERE
   a.total_opens IS NULL;
 ```
 
-## Update the email clicks
+## Copy the email clicks
 
 Copy the values from the clicks_per_user table to the users table.
 
