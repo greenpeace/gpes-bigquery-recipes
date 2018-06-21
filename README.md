@@ -14,6 +14,7 @@ From Engaging Networks:
 2. [Upload email opens and clics](upload-mails-transactional.md) - Ibid.
 3. [Upload the users table](upload-users-table.md)- Ibid.
 4. [Upload the email opt-outs](upload-optouts.md) - Ibid.
+5. [Upload a custom transactional file created by Engaging Networks support](upload-custom-transactional.md) - Download from Egnyte, upload and create a table.
 
 ## Count **petitions and messages per user** from an Engaging Networks transactional file
 
