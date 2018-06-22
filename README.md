@@ -45,12 +45,12 @@ And then:
 
 Things you can check from the Engaging Networks user file:
 
-* [Check invalid fields in the users table](check-invalid-from-users.sql)
-* [Other reports and checks](other-reports.sql)
+* [Check invalid fields in the users table](check-invalid-from-users.sql) - ID numbers and phone numbers
+* [Other reports and checks](other-reports.sql) - Multiple ID numbers and inconsistent records.
 
 ## Other
 
-* [Utilities](utilities.sql)
+* [Utilities](utilities.sql) - Convert emails to sha256, records without ID number or phone...
 * [Delete inactive users](delete-inactive.sql) - Delete users that didn't open, clicked an email or signed up a petition in the last 12 months.
 
 ## Notes
