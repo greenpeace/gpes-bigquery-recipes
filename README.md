@@ -35,6 +35,7 @@ Things you can check from the Engaging Networks user file:
 ## Other
 
 * [Utilities](utilities.sql)
+* [Delete innactive users](delete-inactive.sql)
 
 ## Notes
 
