@@ -7,7 +7,7 @@ DELETE INACTIVE USERS
 
 /*
 
-Recipe to select the innactive users (without taking into consideration the opt-outs)
+Recipe to select the inactive users (without taking into consideration the opt-outs)
 
 This selection must be uploaded to Engaging Networks so you can send one last recovery email.
 

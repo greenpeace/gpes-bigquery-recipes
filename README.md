@@ -20,13 +20,22 @@ From Engaging Networks:
 
 After uploading data to Engaging Networks:
 
+If you have created the transactional files:
+
 1. [Count the number of **petitions** per user from a self-downloaded transactional file](count-petitions-per-user-from-transactional.sql)
 2. [Count the number of **email opens** and **clics** per user from a self-downloaded transactional file](count-messages-per-user-from-transactional.sql)
-3. [Count the number of of **petitions**, **opens** and **clicks** per user from a **custom provided** transactional file](process-custom-transactional.sql)
-4. [**Cross** the users database with the number of petitions per user, number of opens per user and number of clicks per user](cross-signups-opens-clics-with-users.sql)
-5. [Add petitions, opens and clicks data to the users table](enhance-users-table.md)
 
-## Checks
+If EN has created the transactional files for you:
+
+1. [Count the number of of **petitions**, **opens** and **clicks** per user from a **custom provided** transactional file](process-custom-transactional.sql)
+
+And then:
+
+1. [**Cross** the users database with the number of petitions per user, number of opens per user and number of clicks per user](cross-signups-opens-clics-with-users.sql)
+2. [Add petitions, opens and clicks data to the users table](enhance-users-table.md)
+3. [Finetune by removing updated users](tune-updated-users.sql)
+
+## Other checks
 
 Things you can check from the Engaging Networks user file:
 
@@ -36,7 +45,7 @@ Things you can check from the Engaging Networks user file:
 ## Other
 
 * [Utilities](utilities.sql)
-* [Delete innactive users](delete-inactive.sql) - Delete users that didn't open, clicked an email or signed up a petition in the last 12 months.
+* [Delete inactive users](delete-inactive.sql) - Delete users that didn't open, clicked an email or signed up a petition in the last 12 months.
 
 ## Notes
 

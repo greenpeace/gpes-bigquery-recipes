@@ -1,6 +1,6 @@
 # How to upload custom transactional files (with all operations)
 
-This is how you upload and import custom transactional csv files (supplied by Engaging Netwoks).
+This is how you upload and import custom transactional csv files (supplied by Engaging Networks).
 
 ## 1 - Ask for the transactional files and download them
 
@@ -8,7 +8,7 @@ This is how you upload and import custom transactional csv files (supplied by En
 2. Download the zip file from Egnyte with the CSVs
 3. Unzip the csv files
 
-## 2 - Upload the csvs to Google Storage
+## 2 - Upload the CSVs to Google Storage
 
 With **Cyberduck**, upload the csv file(s) to your Google Storage Bucket. In our case it's named **gpes-bigquery-files**.
 
@@ -63,4 +63,4 @@ Please don't forget that for each csv file you must remove one header row. If yo
 
 ## 5 - Clean
 
-Delete the **CSV files** from Google Cloud Storage, as you pay storage space.
+If the import went well you should delete the **CSV files** from Google Cloud Storage, as you pay storage space.
