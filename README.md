@@ -35,7 +35,7 @@ Things you can check from the Engaging Networks user file:
 ## Other
 
 * [Utilities](utilities.sql)
-* [Delete innactive users](delete-inactive.sql)
+* [Delete innactive users](delete-inactive.sql) - Delete users that didn't open, clicked an email or signed up a petition in the last 12 months.
 
 ## Notes
 
