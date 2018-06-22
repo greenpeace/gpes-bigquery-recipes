@@ -27,3 +27,5 @@ It's better to create a Bucket just for this and ensure the files aren't public.
 ## File upload to Cloud Storage with Cyberduck
 
 You can use [Cyberduck](https://cyberduck.io/) to upload the files to Google Cloud Storage. You can upload and download files directly from your browser in [Google Cloud Storage](https://console.cloud.google.com/storage/), but Cyberduck is recommended, specially with larger files.
+
+See also [how to connect to Google Storage with Cyberduck](https://trac.cyberduck.io/wiki/help/en/howto/googlestorage).
