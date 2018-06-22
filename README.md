@@ -20,10 +20,11 @@ From Engaging Networks:
 
 After uploading data to Engaging Networks:
 
-1. [Count the number of **petitions** per user from a transactional file](count-petitions-per-user-from-transactional.sql)
-2. [Count the number of **email opens** and **clics** per user from a transactional file](count-messages-per-user-from-transactional.sql)
-3. [**Cross** the users database with the number of petitions per user, number of opens per user and number of clicks per user](cross-signups-opens-clics-with-users.sql)
-4. [Add petitions, opens and clicks data to the users table](enhance-users-table.md)
+1. [Count the number of **petitions** per user from a self-downloaded transactional file](count-petitions-per-user-from-transactional.sql)
+2. [Count the number of **email opens** and **clics** per user from a self-downloaded transactional file](count-messages-per-user-from-transactional.sql)
+3. [Count the number of of **petitions**, **opens** and **clicks** per user from a **custom provided** transactional file](process-custom-transactional.sql)
+4. [**Cross** the users database with the number of petitions per user, number of opens per user and number of clicks per user](cross-signups-opens-clics-with-users.sql)
+5. [Add petitions, opens and clicks data to the users table](enhance-users-table.md)
 
 ## Checks
 
