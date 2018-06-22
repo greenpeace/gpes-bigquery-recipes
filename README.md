@@ -4,7 +4,7 @@ This repository contains **[Google BigQuery](https://bigquery.cloud.google.com/)
 
 It’s mainly recipes to use with data exported from Engaging Networks. User data and transactional data (petition signups, email opens and email clicks).
 
-## How to **upload data** to BigQuery
+## **Upload data** to BigQuery
 
 * **[Getting started](prepare-to-bigquery.md)** - Access to Google Cloud, create a dataset, create a bucket, csv file uploads.
 
@@ -22,24 +22,24 @@ And then:
 1. [Upload the users table](upload-users-table.md) - Export, csv upload and create a table.
 2. [Upload the email opt-outs](upload-optouts.md) - Ibid.
 
-## Count **petitions and messages per user** from an Engaging Networks transactional file
+## **Signups and messages per user** from an Engaging Networks transactional file
 
-After uploading data to Engaging Networks:
+After uploading data to Engaging Networks continue here.
 
-If you have created the transactional files:
+If you have created the transactional files yourself:
 
-1. [Count the number of **petitions** per user from a self-downloaded transactional file](count-petitions-per-user-from-transactional.sql)
-2. [Count the number of **email opens** and **clics** per user from a self-downloaded transactional file](count-messages-per-user-from-transactional.sql)
+1. [Count the number of **petitions** per user from a self-downloaded petitions transactional file](count-petitions-per-user-from-transactional.sql)
+2. [Count the number of **email opens** and **clics** per user from a self-downloaded emails transactional file](count-messages-per-user-from-transactional.sql)
 
 If EN has created the transactional files for you:
 
-1. [Count the number of of **petitions**, **opens** and **clicks** per user from a **custom provided** transactional file](process-custom-transactional.sql)
+1. [Count the number of of **petitions**, **opens** and **clicks** per user from a **custom provided** full transactional file](process-custom-transactional.sql)
 
 And then:
 
-1. [**Cross** the users database with the number of petitions per user, number of opens per user and number of clicks per user](cross-signups-opens-clics-with-users.sql)
-2. [Add petitions, opens and clicks data to the users table](enhance-users-table.md)
-3. [Finetune by removing updated users](tune-updated-users.sql)
+1. [**Cross** the users database with the number of petitions per user, number of opens per user and number of clicks per user](cross-signups-opens-clics-with-users.sql) (To ensure that you are not adding new users from the transactional files)
+2. [Add petitions, opens and clicks data to the users table](enhance-users-table.md) (To make the queries and results easier to handle)
+3. [Finetune by removing updated users](tune-updated-users.sql) (So that there's no false "zero participation" users if the transactional files aren't as recent)
 
 ## Other checks
 

@@ -2,6 +2,12 @@
 
 DELETE INACTIVE USERS
 
+At first sight this looks similar to Engaging's score 0 criteria.
+
+However you can fully control and modify the criteria in the query bellow and easily cross data 
+
+with other sources like for example your own telemarketing results.
+
 */
 
 
