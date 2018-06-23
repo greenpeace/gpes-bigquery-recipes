@@ -10,21 +10,27 @@ Most of our recipes use data exported from Engaging Networks. User data and tran
 
 * **[Getting started](prepare-to-bigquery.md)** - Access to Google Cloud, create a dataset, create a bucket, csv file uploads.
 
-If you have created the transactional files yourself:
+### From Engaging Networks
+
+Transactional files that you created yourself:
 
 1. [Upload petition signups](upload-petitions-transactional.md) - Export, csv upload and create a table.
 2. [Upload email opens and clics](upload-mails-transactional.md) - Ibid.
 
-If EN has created the transactional files for you:
+Transactional files created by EN for you:
 
 1. [Upload a custom transactional file created by Engaging Networks support](upload-custom-transactional.md) - Download from Egnyte, upload and create a table.
 
-And then:
+User and questions:
 
 1. [Upload the users table](upload-users-table.md) - Export, csv upload and create a table.
 2. [Upload the email opt-outs](upload-optouts.md) - Ibid.
 
-## **Signups and messages per user** from an Engaging Networks transactional file
+### From Salesforce
+
+* [Upload report](upload-from-salesforce.md)
+
+## Process **signups and messages per user** from an Engaging Networks transactional file
 
 After uploading data to Engaging Networks continue here.
 
