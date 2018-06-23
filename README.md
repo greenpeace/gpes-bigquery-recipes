@@ -66,7 +66,7 @@ And then:
 
 Things you can check from the Engaging Networks user file:
 
-- [Check invalid fields in the users table](check-invalid-from-users.sql) - ID numbers and phone numbers
+- [Check invalid fields in the users table](check-invalid-from-users.md) - ID numbers and phone numbers
 - [Other reports and checks](other-reports.md) - Multiple ID numbers and inconsistent records.
 
 ## Other
