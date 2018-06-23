@@ -71,7 +71,7 @@ Things you can check from the Engaging Networks user file:
 
 ## Other
 
-- [Utilities](utilities.sql) - Convert emails to sha256, records without ID number or phone...
+- [Utilities](utilities.md) - Convert emails to sha256, records without ID number or phone...
 - [Delete inactive users](delete-inactive.md) - Delete users that didn't open, clicked an email or signed up a petition in the last 12 months.
 
 ## Notes
