@@ -21,7 +21,7 @@ Most of our recipes use data exported from Engaging Networks. User data and tran
 
 ## **Upload data** to BigQuery
 
-* **[Getting started](prepare-to-bigquery.md)** - Access to Google Cloud, create a dataset, create a bucket, csv file uploads.
+- **[Getting started](prepare-to-bigquery.md)** - Access to Google Cloud, create a dataset, create a bucket, csv file uploads.
 
 ### From Engaging Networks
 
@@ -41,7 +41,7 @@ User and questions:
 
 ### From Salesforce
 
-* [Upload report](upload-from-salesforce.md)
+- [Upload report](upload-from-salesforce.md)
 
 ## Process **signups and messages per user** from an Engaging Networks transactional file
 
@@ -66,14 +66,14 @@ And then:
 
 Things you can check from the Engaging Networks user file:
 
-* [Check invalid fields in the users table](check-invalid-from-users.sql) - ID numbers and phone numbers
-* [Other reports and checks](other-reports.sql) - Multiple ID numbers and inconsistent records.
+- [Check invalid fields in the users table](check-invalid-from-users.sql) - ID numbers and phone numbers
+- [Other reports and checks](other-reports.sql) - Multiple ID numbers and inconsistent records.
 
 ## Other
 
-* [Utilities](utilities.sql) - Convert emails to sha256, records without ID number or phone...
-* [Delete inactive users](delete-inactive.sql) - Delete users that didn't open, clicked an email or signed up a petition in the last 12 months.
+- [Utilities](utilities.sql) - Convert emails to sha256, records without ID number or phone...
+- [Delete inactive users](delete-inactive.md) - Delete users that didn't open, clicked an email or signed up a petition in the last 12 months.
 
 ## Notes
 
-* With the code in this repository, you should always use BigQuery Standard SQL.
+- With the code in this repository, you should always use BigQuery Standard SQL.
