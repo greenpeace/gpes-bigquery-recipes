@@ -2,7 +2,9 @@
 
 This repository contains **[Google BigQuery](https://bigquery.cloud.google.com/)** recipes to Analyse our data. To know more about Google BigQuery, watch [this video](https://www.youtube.com/watch?v=eyBK9nj-7AA).
 
-It’s mainly recipes to use with data exported from Engaging Networks. User data and transactional data (petition signups, email opens and email clicks).
+We are starting to use BigQuery for a few maintenace and Analytics tasks as it can quickly process large ammounts of information.
+
+Most of our recipes use data exported from Engaging Networks. User data and transactional data (petition signups, email opens and email clicks).
 
 ## **Upload data** to BigQuery
 
