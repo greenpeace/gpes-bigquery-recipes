@@ -1,5 +1,18 @@
 # BigQuery recipes
 
+<!-- TOC -->
+
+- [BigQuery recipes](#bigquery-recipes)
+    - [**Upload data** to BigQuery](#upload-data-to-bigquery)
+        - [From Engaging Networks](#from-engaging-networks)
+        - [From Salesforce](#from-salesforce)
+    - [Process **signups and messages per user** from an Engaging Networks transactional file](#process-signups-and-messages-per-user-from-an-engaging-networks-transactional-file)
+    - [Other checks](#other-checks)
+    - [Other](#other)
+    - [Notes](#notes)
+
+<!-- /TOC -->
+
 This repository contains **[Google BigQuery](https://bigquery.cloud.google.com/)** recipes to Analyse our data. To know more about Google BigQuery, watch [this video](https://www.youtube.com/watch?v=eyBK9nj-7AA).
 
 We are starting to use BigQuery for a few maintenace and Analytics tasks as it can quickly process large ammounts of information.
