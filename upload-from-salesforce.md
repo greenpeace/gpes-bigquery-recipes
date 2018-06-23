@@ -2,15 +2,17 @@
 
 We use Salesforce as our CRM.
 
-## 1 - Export the users from Engaging Networks
+## 1 - Export the users from Salesforce
 
 To bring data from Salesforce to Google Big Query you must first create a report in Salesforce and export it as a CSV.
+
+Use this options:
 
 * Format: CSV
 * Charset: UTF-8
 * Delimitado por comas, (distinto a la configuración regional).csv
 
-For large volumes you may need to split your file.
+For large volumes you may need to split your file if Salesforce gives you an error.
 
 ## 2 - Upload the CSVs to Google Storage
 
