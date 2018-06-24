@@ -14,6 +14,13 @@ Use this options:
 
 For large volumes you may need to split your file if Salesforce gives you an error.
 
+Please remmember that if the data to upload needs to be crossed latter you should include at least one field that identifies the user. Normally one of the following fields:
+
+1. DNI/NIE
+2. Email address
+3. Phone number
+4. Salesforce contact id or lead id
+
 ## 2 - Upload the CSVs to Google Storage
 
 With **Cyberduck**, upload the csv file(s) to your Google Storage Bucket. In our case it's named **gpes-bigquery-files**.
