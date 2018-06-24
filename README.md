@@ -7,6 +7,7 @@
         - [From Engaging Networks](#from-engaging-networks)
         - [From Salesforce](#from-salesforce)
     - [Process **signups and messages per user** from an Engaging Networks transactional file](#process-signups-and-messages-per-user-from-an-engaging-networks-transactional-file)
+    - [Store permanent standard transactional files](#store-permanent-standard-transactional-files)
     - [Other checks](#other-checks)
     - [Other](#other)
     - [Notes](#notes)
@@ -61,6 +62,16 @@ And then:
 1. [**Cross** the users database with the number of petitions per user, number of opens per user and number of clicks per user](cross-signups-opens-clics-with-users.sql) (To ensure that you are not adding new users from the transactional files)
 2. [Add petitions, opens and clicks data to the users table](enhance-users-table.md) (To make the queries and results easier to handle)
 3. [Finetune by removing updated users](tune-updated-users.sql) (So that there's no false "zero participation" users if the transactional files aren't as recent)
+
+## Store permanent standard transactional files
+
+Standard transactional tables are tables created to store data in the long term and to be appended with new information. They have minimal data identifying the user and maximum data identifying the event.
+
+For example email behaviour tables will identify the user by the email address only. Petitions will use email address or DNI and phone calls only the phone number.
+
+This means this tables are meant to be crossed with user tables.
+
+- For now we have a table for Engaging Networks transactional data: **[en_transactional_archive](en_transactional_archive.md)**
 
 ## Other checks
 
