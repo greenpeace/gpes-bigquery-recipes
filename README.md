@@ -35,18 +35,18 @@ Transactional files created by EN for you:
 
 1. [Upload a custom transactional file created by Engaging Networks support](upload-custom-transactional.md) - Download from Egnyte, upload and create a table.
 
-User and questions:
+User table and questions:
 
 1. [Upload the users table](upload-users-table.md) - Export, csv upload and create a table.
 2. [Upload the email opt-outs](upload-optouts.md) - Ibid.
 
 ### From Salesforce
 
-- [Upload report](upload-from-salesforce.md)
+- [Upload report](upload-from-salesforce.md) - Notes on how to upload a report as a csv.
 
 ## Process **signups and messages per user** from an Engaging Networks transactional file
 
-After uploading data to Engaging Networks continue here.
+After uploading data to Engaging Networks:
 
 If you have created the transactional files yourself:
 
@@ -65,13 +65,13 @@ And then:
 
 ## Store permanent minimum transactional files
 
-Minimum transactional tables are tables created to store event data in the long term. They can and should appended with information about new events.
+Minimum transactional tables are tables created to store event data in the **long term**. This transactional tables are usually created by removing fields from default transactional tables.
 
-This tables can be crossed with user tables that contain user personal data and foreign keys.
+They can and should be **appended** with information about new events, instead of creatting new tables.
 
 - For now we have a table for Engaging Networks transactional data: [en_transactional_archive](en_transactional_archive.md) It stores opens and clicks in emails, petition and cyberaction signups and answers to questions.
 
-This transactional tables are usually created by removing fields from other transactional tables.
+This tables can be crossed with user tables that contain user personal data and foreign keys.
 
 ## Other checks
 
