@@ -2,7 +2,7 @@
 
 We use Salesforce as our CRM.
 
-## 1 - Export the users from Salesforce
+## 1 - Export from Salesforce
 
 To bring data from Salesforce to Google Big Query you must first create a report in Salesforce and export it as a CSV.
 
