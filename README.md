@@ -55,7 +55,7 @@ If you have created the transactional files yourself:
 
 If EN has created the transactional files for you:
 
-1. [Count the number of of **petitions**, **opens** and **clicks** per user from a **custom provided** full transactional file](process-custom-transactional.sql)
+1. [Count the number of of **petitions**, **opens** and **clicks** per user from a **custom provided** full transactional file](process-custom-transactional.md)
 
 And then:
 
