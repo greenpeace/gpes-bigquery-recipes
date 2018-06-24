@@ -3,13 +3,13 @@
 <!-- TOC -->
 
 - [Utilities](#utilities)
-    - [Convert emails to sha256](#convert-emails-to-sha256)
+    - [Hash emails as sha256](#hash-emails-as-sha256)
     - [Get a list of leads without phone number](#get-a-list-of-leads-without-phone-number)
     - [Get a list of records without ID number](#get-a-list-of-records-without-id-number)
 
 <!-- /TOC -->
 
-## Convert emails to sha256
+## Hash emails as sha256
 
 This is useful in Adwords, Facebook and Twitter Ads because you can show ads to the users without sending their email address.
 
@@ -44,6 +44,8 @@ WHERE
 ```
 
 ## Get a list of records without ID number
+
+To reduce the number of records without ID number you can ask this users to sign another petition.
 
 ```sql
 #standardSQL
