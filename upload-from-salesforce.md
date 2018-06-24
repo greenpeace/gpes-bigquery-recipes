@@ -1,6 +1,6 @@
 # Upload from Salesforce
 
-We use Salesforce as our CRM.
+We use Salesforce as our CRM. Sometimes it's useful to export dara from Salesforce and analyse it in BigQuery.
 
 ## 1 - Export from Salesforce
 
