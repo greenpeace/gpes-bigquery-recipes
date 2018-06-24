@@ -61,7 +61,7 @@ And then:
 
 1. [**Cross** the users database with the number of petitions per user, number of opens per user and number of clicks per user](cross-signups-opens-clics-with-users.sql) (To ensure that you are not adding new users from the transactional files)
 2. [Add petitions, opens and clicks data to the users table](enhance-users-table.md) (To make the queries and results easier to handle)
-3. [Finetune by removing updated users](tune-updated-users.sql) (So that there's no false "zero participation" users if the transactional files aren't as recent)
+3. [Finetune by removing updated users](tune-updated-users.md) (So that there's no false "zero participation" users if the transactional files aren't as recent)
 
 ## Store permanent minimum transactional files
 
@@ -69,7 +69,9 @@ Minimum transactional tables are tables created to store event data in the long 
 
 This tables can be crossed with user tables that contain user personal data and foreign keys.
 
-- For now we have a table for Engaging Networks transactional data: **[en_transactional_archive](en_transactional_archive.md)**
+- For now we have a table for Engaging Networks transactional data: **[en_transactional_archive](en_transactional_archive.md)** It stores opens and clicks in emails, petition and cyberaction signups and answers to questions.
+
+This transactional tables are usually created by removing fields from other transactional tables.
 
 ## Other checks
 
