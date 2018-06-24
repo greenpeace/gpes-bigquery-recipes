@@ -50,7 +50,7 @@ After uploading data to Engaging Networks:
 
 If you have created the transactional files yourself:
 
-1. [Count the number of **petitions** per user from a self-downloaded petitions transactional file](count-petitions-per-user-from-transactional.sql)
+1. [Count the number of **petitions** per user from a self-downloaded petitions transactional file](count-petitions-per-user-from-transactional.md)
 2. [Count the number of **email opens** and **clics** per user from a self-downloaded emails transactional file](count-messages-per-user-from-transactional.sql)
 
 If EN has created the transactional files for you:
@@ -69,7 +69,7 @@ Minimum transactional tables are tables created to store event data in the **lon
 
 They can and should be **appended** with information about new events, instead of creatting new tables.
 
-- For now we have a table for Engaging Networks transactional data: [en_transactional_archive](en_transactional_archive.md) It stores opens and clicks in emails, petition and cyberaction signups and answers to questions.
+- For now we have a table for **Engaging Networks** transactional data: [en_transactional_archive](en_transactional_archive.md) It stores opens and clicks in emails, petition and cyberaction signups and answers to questions.
 
 This tables can be crossed with user tables that contain user personal data and foreign keys.
 
