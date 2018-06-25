@@ -16,7 +16,7 @@ Call Result Date
 Response Code
 ```
 
-Our report is [here](https://eu15.salesforce.com/00O1p000004nfzJ).
+Our report is [here](https://eu15.salesforce.com/00O1p000004ng4E).
 
 ## Upload the file(s) to Salesforce
 
@@ -27,10 +27,19 @@ In the **spain** dataset, create a table named **telemarketing_temp** and load i
 This is the schema to use:
 
 ```text
-Id__de_miembro:STRING,Id__de_candidato_contacto:STRING,Id__de_campa__a:STRING,Tel__fono:STRING,Tel__fono_m__vil:STRING,Call_Result_Date:DATE,Response_Code:STRING
+Id__de_miembro:STRING,Id__de_candidato_contacto:STRING,Id__de_campa__a:STRING,Tel__fono:STRING,Tel__fono_m__vil:STRING,Call_Result_Date:STRING,Response_Code:STRING
 ```
 
-All the fields are strings except for **Call_Result_Date** that is a date.
+**Call_Result_Date** should be a date. To fix that use
+
+```sql
+#standardSQL
+UPDATE
+  `spain.users`
+SET
+  Date_Created = SAFE_CAST(PARSE_DATE('%d/%m/%Y',
+      Date_Created) AS STRING)
+```
 
 Please check if the information is correctly loaded into the temporary file.
 
@@ -58,21 +67,23 @@ Campaign_Member_ID:STRING,Contact_Lead_ID:STRING,Campaign_ID:STRING,Phone:STRING
 To add the **telemarketing_temp** to **telemarketing_campaigns** use this SQL code.
 
 ```sql
-INSERT INTO spain.telemarketing_campaigns (
-    Campaign_Member_ID,
+#standardSQL
+  INSERT INTO spain.telemarketing_campaigns ( Campaign_Member_ID,
     Contact_Lead_ID,
     Campaign_ID,
     Phone,
     Call_Result_Date,
-    Response_Code
-    )
+    Response_Code )
 SELECT
-    Id__de_miembro,
-    Id__de_candidato_contacto,
-    Id__de_campa__a,
-    SAFE_CAST(Tel__fono AS String),
-    Tel__fono_m__vil,
-    Call_Result_Date,
-    Response_Code
-FROM spain.telemarketing_temp;
+  Id__de_miembro,
+  Id__de_candidato_contacto,
+  Id__de_campa__a,
+  CASE
+    WHEN REGEXP_CONTAINS(Tel__fono_m__vil,  '^[67][0123456789]{8}$') THEN Tel__fono_m__vil
+    ELSE Tel__fono END,
+  SAFE_CAST(PARSE_DATE('%d/%m/%Y',
+      Call_Result_Date) AS DATE),
+  Response_Code
+FROM
+  spain.telemarketing_temp;
 ```
