@@ -38,6 +38,8 @@ gs://gpes-bigquery-files/*.csv
 
 Please check if the information is correctly loaded into the temporary file.
 
+Delete the csv files from the Bucket.
+
 ## Add the temporary table to an archive table
 
 The table **telemarketing_campaigns** is where we permanently store information about telemarketing calls. The table **telemarketing_temp** should be appended to this table after being checked and uploaded.
@@ -83,4 +85,6 @@ FROM
   spain.telemarketing_temp;
 ```
 
-Loaded from 2017-06-01 to 2018-05-31
+(Loaded from 2017-06-01 to 2018-05-31)
+
+Finally delete the **telemarketing_temp** table.
