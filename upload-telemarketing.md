@@ -30,15 +30,10 @@ This is the schema to use:
 Id__de_miembro:STRING,Id__de_candidato_contacto:STRING,Id__de_campa__a:STRING,Tel__fono:STRING,Tel__fono_m__vil:STRING,Call_Result_Date:STRING,Response_Code:STRING
 ```
 
-**Call_Result_Date** should be a date. To fix that use
+And this the Google Storage Bucket:
 
-```sql
-#standardSQL
-UPDATE
-  `spain.users`
-SET
-  Date_Created = SAFE_CAST(PARSE_DATE('%d/%m/%Y',
-      Date_Created) AS STRING)
+```text
+gs://gpes-bigquery-files/*.csv
 ```
 
 Please check if the information is correctly loaded into the temporary file.
@@ -87,3 +82,5 @@ SELECT
 FROM
   spain.telemarketing_temp;
 ```
+
+Loaded from 2017-06-01 to 2018-05-31

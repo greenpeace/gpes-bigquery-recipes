@@ -43,6 +43,7 @@ User table and questions:
 ### From Salesforce
 
 - [Upload report](upload-from-salesforce.md) - Notes on how to upload a report as a csv.
+- [Upload telemarketing](upload-telemarketing.md) - How to upload phone call results.
 
 ## Process **signups and messages per user** from an Engaging Networks transactional file
 
